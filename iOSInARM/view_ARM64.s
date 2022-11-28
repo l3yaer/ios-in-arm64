@@ -39,7 +39,7 @@ view_Setup:
 
 view_DrawRect:
     sub sp, sp, 0x20
-    strp x29, x30, [sp, 0x10]
+    stp x29, x30, [sp, 0x10]
     sub x29, sp, 0x10
 
 
@@ -52,7 +52,7 @@ view_DrawRect:
 
     mov x0, x4
     adrp x9, view_FillRect@PAGE
-    add x9 x9, view_FillRect@PAGEOFF
+    add x9, x9, view_FillRect@PAGEOFF
     ldr d0, [x9]
     ldr d1, [x9, 0x4]
     ldr d2, [x9, 0x8]
@@ -66,6 +66,33 @@ view_DrawRect:
     fmov d0, #12.0
     mov x2, 0x1
     bl _CGContextSelectFont
+
+    mov x0, x4
+    adrp x1, view_FillColor@PAGE
+    add x1, x1, view_FillColor@PAGEOFF
+    bl _CGContextSetFillColor
+
+    mov x0, x4
+    fmov d0, #1.0
+    fmov d1, #0.0
+    fmov d2, #0.0
+    fmov d3, #-1.0
+    fmov d4, #0.0
+    fmov d5, #0.0
+    bl _CGContextSetTextMatrix
+
+    adrp x0, view_DrawStringPosition@PAGE
+    add x0, x0, view_DrawStringPosition@PAGEOFF
+    ldr d0, [x0]
+    ldr d1, [x0, 0x4]
+    mov x0, x4
+    bl _CGContextSetTextPosition
+
+    mov x0, x4
+    adrp x1, view_drawString@PAGE
+    add x1, x1, view_drawString@PAGEOFF
+    mov x2, 0x10
+    bl _CGContextShowText
 
     ldp x29, x30, [sp], 0x10
     add sp, sp, 0x20
@@ -100,17 +127,14 @@ view_FillRect:
 view_FillColor:
     .float 1, 0, 1, 1
 
-view_TextPosition:
-    .float 100, 100
-
-view_TextMatrix:
-    .float 1, 0, 0, -1, 0, 0
-
 view_FontName:
     .asciz "Helvetica"
 
 view_DrawColor:
     .float 0, 1, 1, 1
+
+view_DrawStringPosition:
+    .float 100, 100
 
 view_DrawStringLength:
     .int 16

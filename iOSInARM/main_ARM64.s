@@ -14,12 +14,19 @@ _main:
     bl _objc_autoreleasePoolPush
     str x0, [sp, 0x8]
 
-    mov x0, 0x1
-    adrp x1, helloworld@PAGE
-    add x1, x1, helloworld@PAGEOFF
-    mov x2, 0xd
-    mov x16, 0x4
-    svc 0x80
+    bl appDelegate_Setup
+
+    mov x0, 0x0
+    adrp x1, s_delegateClassNameCStr@PAGE
+    add x1, x1, s_delegateClassNameCStr@PAGEOFF
+    mov x2, 0x600
+    bl _CFStringCreateWithCString
+
+    mov x3, x0
+    mov x0, 0x0
+    mov x1, 0x0
+    mov x2, 0x0
+    bl _UIApplicationMain
 
     ldr x0, [sp, 0x8]
     bl _objc_autoreleasePoolPop

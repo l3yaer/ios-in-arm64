@@ -12,6 +12,7 @@
 		AE321F4C29266EE7002E6434 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE321F4B29266EE7002E6434 /* UIKit.framework */; };
 		AE80F58329302C82009E4557 /* main_ARM64.s in Sources */ = {isa = PBXBuildFile; fileRef = AE80F57F29302C82009E4557 /* main_ARM64.s */; };
 		AE80F58729302D3A009E4557 /* view_ARM64.s in Sources */ = {isa = PBXBuildFile; fileRef = AE80F58029302C82009E4557 /* view_ARM64.s */; };
+		AEE9AF5D293571560068C665 /* app_delegate_ARM64.s in Sources */ = {isa = PBXBuildFile; fileRef = AEE9AF5C293571560068C665 /* app_delegate_ARM64.s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AE80F57F29302C82009E4557 /* main_ARM64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = main_ARM64.s; sourceTree = "<group>"; };
 		AE80F58029302C82009E4557 /* view_ARM64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = view_ARM64.s; sourceTree = "<group>"; };
 		AE80F58229302C82009E4557 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEE9AF5C293571560068C665 /* app_delegate_ARM64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = app_delegate_ARM64.s; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				AE80F57F29302C82009E4557 /* main_ARM64.s */,
+				AEE9AF5C293571560068C665 /* app_delegate_ARM64.s */,
 				AE80F58029302C82009E4557 /* view_ARM64.s */,
 				AE80F58229302C82009E4557 /* Info.plist */,
 			);
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE80F58329302C82009E4557 /* main_ARM64.s in Sources */,
+				AEE9AF5D293571560068C665 /* app_delegate_ARM64.s in Sources */,
 				AE80F58729302D3A009E4557 /* view_ARM64.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
