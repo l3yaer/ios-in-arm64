@@ -7,28 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE321F2F29266E82002E6434 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE321F2E29266E82002E6434 /* AppDelegate.m */; };
-		AE321F3229266E82002E6434 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE321F3129266E82002E6434 /* SceneDelegate.m */; };
-		AE321F3529266E82002E6434 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE321F3429266E82002E6434 /* ViewController.m */; };
-		AE321F3829266E82002E6434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE321F3629266E82002E6434 /* Main.storyboard */; };
-		AE321F3A29266E84002E6434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE321F3929266E84002E6434 /* Assets.xcassets */; };
-		AE321F3D29266E84002E6434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE321F3B29266E84002E6434 /* LaunchScreen.storyboard */; };
-		AE321F4029266E84002E6434 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE321F3F29266E84002E6434 /* main.m */; };
+		AE321F4829266EB9002E6434 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE321F4729266EB9002E6434 /* Foundation.framework */; };
+		AE321F4A29266EBD002E6434 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE321F4929266EBD002E6434 /* CoreGraphics.framework */; };
+		AE321F4C29266EE7002E6434 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE321F4B29266EE7002E6434 /* UIKit.framework */; };
+		AE80F58329302C82009E4557 /* main_ARM64.s in Sources */ = {isa = PBXBuildFile; fileRef = AE80F57F29302C82009E4557 /* main_ARM64.s */; };
+		AE80F58729302D3A009E4557 /* view_ARM64.s in Sources */ = {isa = PBXBuildFile; fileRef = AE80F58029302C82009E4557 /* view_ARM64.s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AE321F2A29266E82002E6434 /* iOSInARMv7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSInARMv7.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE321F2D29266E82002E6434 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AE321F2E29266E82002E6434 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AE321F3029266E82002E6434 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		AE321F3129266E82002E6434 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		AE321F3329266E82002E6434 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AE321F3429266E82002E6434 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AE321F3729266E82002E6434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE321F3929266E84002E6434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE321F3C29266E84002E6434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AE321F3E29266E84002E6434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE321F3F29266E84002E6434 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE321F2A29266E82002E6434 /* iOSInARM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSInARM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE321F4729266EB9002E6434 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE321F4929266EBD002E6434 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE321F4B29266EE7002E6434 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE80F57F29302C82009E4557 /* main_ARM64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = main_ARM64.s; sourceTree = "<group>"; };
+		AE80F58029302C82009E4557 /* view_ARM64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = view_ARM64.s; sourceTree = "<group>"; };
+		AE80F58229302C82009E4557 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE321F4A29266EBD002E6434 /* CoreGraphics.framework in Frameworks */,
+				AE321F4C29266EE7002E6434 /* UIKit.framework in Frameworks */,
+				AE321F4829266EB9002E6434 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,43 +41,46 @@
 		AE321F2129266E82002E6434 = {
 			isa = PBXGroup;
 			children = (
-				AE321F2C29266E82002E6434 /* iOSInARMv7 */,
+				AE80F57E29302C82009E4557 /* iOSInARM */,
 				AE321F2B29266E82002E6434 /* Products */,
+				AE321F4629266EB8002E6434 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		AE321F2B29266E82002E6434 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE321F2A29266E82002E6434 /* iOSInARMv7.app */,
+				AE321F2A29266E82002E6434 /* iOSInARM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE321F2C29266E82002E6434 /* iOSInARMv7 */ = {
+		AE321F4629266EB8002E6434 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AE321F2D29266E82002E6434 /* AppDelegate.h */,
-				AE321F2E29266E82002E6434 /* AppDelegate.m */,
-				AE321F3029266E82002E6434 /* SceneDelegate.h */,
-				AE321F3129266E82002E6434 /* SceneDelegate.m */,
-				AE321F3329266E82002E6434 /* ViewController.h */,
-				AE321F3429266E82002E6434 /* ViewController.m */,
-				AE321F3629266E82002E6434 /* Main.storyboard */,
-				AE321F3929266E84002E6434 /* Assets.xcassets */,
-				AE321F3B29266E84002E6434 /* LaunchScreen.storyboard */,
-				AE321F3E29266E84002E6434 /* Info.plist */,
-				AE321F3F29266E84002E6434 /* main.m */,
+				AE321F4B29266EE7002E6434 /* UIKit.framework */,
+				AE321F4929266EBD002E6434 /* CoreGraphics.framework */,
+				AE321F4729266EB9002E6434 /* Foundation.framework */,
 			);
-			path = iOSInARMv7;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE80F57E29302C82009E4557 /* iOSInARM */ = {
+			isa = PBXGroup;
+			children = (
+				AE80F57F29302C82009E4557 /* main_ARM64.s */,
+				AE80F58029302C82009E4557 /* view_ARM64.s */,
+				AE80F58229302C82009E4557 /* Info.plist */,
+			);
+			path = iOSInARM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AE321F2929266E82002E6434 /* iOSInARMv7 */ = {
+		AE321F2929266E82002E6434 /* iOSInARM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE321F4329266E84002E6434 /* Build configuration list for PBXNativeTarget "iOSInARMv7" */;
+			buildConfigurationList = AE321F4329266E84002E6434 /* Build configuration list for PBXNativeTarget "iOSInARM" */;
 			buildPhases = (
 				AE321F2629266E82002E6434 /* Sources */,
 				AE321F2729266E82002E6434 /* Frameworks */,
@@ -91,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = iOSInARMv7;
-			productName = iOSInARMv7;
-			productReference = AE321F2A29266E82002E6434 /* iOSInARMv7.app */;
+			name = iOSInARM;
+			productName = iOSInARM;
+			productReference = AE321F2A29266E82002E6434 /* iOSInARM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AE321F2529266E82002E6434 /* Build configuration list for PBXProject "iOSInARMv7" */;
+			buildConfigurationList = AE321F2529266E82002E6434 /* Build configuration list for PBXProject "iOSInARM" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,7 +122,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AE321F2929266E82002E6434 /* iOSInARMv7 */,
+				AE321F2929266E82002E6434 /* iOSInARM */,
 			);
 		};
 /* End PBXProject section */
@@ -133,9 +132,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE321F3D29266E84002E6434 /* LaunchScreen.storyboard in Resources */,
-				AE321F3A29266E84002E6434 /* Assets.xcassets in Resources */,
-				AE321F3829266E82002E6434 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,33 +142,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE321F3529266E82002E6434 /* ViewController.m in Sources */,
-				AE321F2F29266E82002E6434 /* AppDelegate.m in Sources */,
-				AE321F4029266E84002E6434 /* main.m in Sources */,
-				AE321F3229266E82002E6434 /* SceneDelegate.m in Sources */,
+				AE80F58329302C82009E4557 /* main_ARM64.s in Sources */,
+				AE80F58729302D3A009E4557 /* view_ARM64.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AE321F3629266E82002E6434 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE321F3729266E82002E6434 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AE321F3B29266E84002E6434 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE321F3C29266E84002E6434 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AE321F4129266E84002E6434 /* Debug */ = {
@@ -288,59 +263,67 @@
 		AE321F4429266E84002E6434 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK76EYN8RB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOSInARMv7/Info.plist;
+				INFOPLIST_FILE = iOSInARM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yago.iOSInARMv7;
+				PRODUCT_BUNDLE_IDENTIFIER = yago.iOSInARM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AE321F4529266E84002E6434 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CK76EYN8RB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOSInARMv7/Info.plist;
+				INFOPLIST_FILE = iOSInARM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yago.iOSInARMv7;
+				PRODUCT_BUNDLE_IDENTIFIER = yago.iOSInARM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AE321F2529266E82002E6434 /* Build configuration list for PBXProject "iOSInARMv7" */ = {
+		AE321F2529266E82002E6434 /* Build configuration list for PBXProject "iOSInARM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE321F4129266E84002E6434 /* Debug */,
@@ -349,7 +332,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE321F4329266E84002E6434 /* Build configuration list for PBXNativeTarget "iOSInARMv7" */ = {
+		AE321F4329266E84002E6434 /* Build configuration list for PBXNativeTarget "iOSInARM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE321F4429266E84002E6434 /* Debug */,
