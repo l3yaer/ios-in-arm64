@@ -16,6 +16,8 @@ _main:
 
     bl appDelegate_Setup
 
+    bl view_Setup
+
     mov x0, 0x0
     adrp x1, s_delegateClassNameCStr@PAGE
     add x1, x1, s_delegateClassNameCStr@PAGEOFF
